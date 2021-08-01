@@ -16,7 +16,7 @@ public class SimpleFileReadApplication {
 
     // monitor directory, checking for new files
     TextInputFormat format = new TextInputFormat(
-        new org.apache.flink.core.fs.Path("file:///tmp/dir/"));
+        new org.apache.flink.core.fs.Path("file:///tmp/flink-tmp/"));
 
     FilePathFilter.createDefaultFilter();
     DataStream<String> inputStream = env.readFile(
